@@ -1,10 +1,9 @@
-package com.qf.service;
+package com.qf.student_provider.dao;
 
 import com.qf.entity.Student;
 
 import java.util.List;
 
-public interface IStudentService {
-    Student getStudentById(int id);
+public interface IStudentDao {
     List<Student> queryAllStudent();
 }
