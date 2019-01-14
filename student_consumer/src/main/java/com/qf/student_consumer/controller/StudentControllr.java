@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/stu")
 public class StudentControllr {
@@ -19,5 +21,11 @@ public class StudentControllr {
     public Student selectOne(@PathVariable("id")int id){
         Student student=studentService.getStudentById(id);
         return student;
+    }
+
+    @RequestMapping("/queryall")
+    public List<Student> queryAll(){
+        List<Student> list=studentService.queryAllStudent();
+        return list;
     }
 }
