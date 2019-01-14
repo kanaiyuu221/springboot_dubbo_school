@@ -1,0 +1,7 @@
+server:
+  port: 8081
+dubbo:
+  application:
+    name: student_consumer
+  registry:
+    address: zookeeper://10.36.142.126:2181
