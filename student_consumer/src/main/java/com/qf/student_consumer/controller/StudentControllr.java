@@ -54,4 +54,12 @@ public class StudentControllr {
         }
 
     }
+
+    @RequestMapping("/stulist")
+    public String stulist(Model model){
+        List<Student> listStu = studentService.queryStuList();
+        model.addAttribute("slist",listStu);
+
+        return "stuList";
+    }
 }

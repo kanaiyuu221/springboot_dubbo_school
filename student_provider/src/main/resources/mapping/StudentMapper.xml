@@ -4,7 +4,14 @@
 <mapper namespace="com.qf.student_provider.dao.IStudentDao">
 
 
-    <select id="queryAllStudent" resultType="com.qf.entity.Student">
+    <resultMap id="queryAll" type="com.qf.entity.Student">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <result property="classId" column="class_id"/>
+    </resultMap>
+
+    <select id="queryAllStudent" resultMap="queryAll">
         select * from d_student
     </select>
 

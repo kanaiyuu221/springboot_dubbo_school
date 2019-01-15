@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface IClassService {
     List<Class_> queryAllClass();
+    String getClassNameById(int id);
 }

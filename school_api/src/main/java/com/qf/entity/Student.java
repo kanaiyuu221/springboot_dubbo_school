@@ -1,6 +1,7 @@
 package com.qf.entity;
 
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -11,6 +12,7 @@ public class Student implements Serializable {
     private int id;
     private String name;
     private int age;
+
     private int classId;
 
     //@TableField(exist = false)

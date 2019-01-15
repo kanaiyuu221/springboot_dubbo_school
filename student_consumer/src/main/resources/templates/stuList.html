@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        table{border: solid gray 1px;border-collapse: collapse;}
+        tr{border: solid gray 1px;}
+        td{border: solid gray 1px;}
+    </style>
+</head>
+<body>
+<h1>学生列表页面</h1>
+<hr>
+<table>
+    <tr>
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>班级</td>
+    </tr>
+
+    <tr th:each="s : ${slist}">
+        <td th:text="${s.name}">姓名</td>
+        <td th:text="${s.age}">年龄</td>
+        <td th:text="${s.className}">班级</td>
+    </tr>
+
+</table>
+</body>
+</html>

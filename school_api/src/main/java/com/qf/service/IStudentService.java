@@ -10,4 +10,5 @@ public interface IStudentService {
     List<Student> queryAllStudent();
     List<Class_> queryAllClass();
     int addStu(Student student);
+    List<Student> queryStuList();
 }
