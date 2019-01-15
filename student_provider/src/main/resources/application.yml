@@ -1,9 +1,9 @@
-#10.36.142.126
+#10.36.142.126 192.168.3.17
 dubbo:
   application:
     name: student_provider
   registry:
-    address: zookeeper://192.168.3.17:2181
+    address: zookeeper://10.36.142.31:2181
   protocol:
     name: dubbo
     port: 20880

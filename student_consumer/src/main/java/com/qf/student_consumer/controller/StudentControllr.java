@@ -28,4 +28,9 @@ public class StudentControllr {
         List<Student> list=studentService.queryAllStudent();
         return list;
     }
+
+    @RequestMapping("/insertStu")
+    public String insertStu(){
+        return "addstuPage";
+    }
 }
