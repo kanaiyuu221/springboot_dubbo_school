@@ -6,3 +6,6 @@ dubbo:
     name: student_consumer
   registry:
     address: zookeeper://10.36.142.31:2181
+spring:
+  thymeleaf:
+    cache: false

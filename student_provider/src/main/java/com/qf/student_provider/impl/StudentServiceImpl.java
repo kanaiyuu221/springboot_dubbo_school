@@ -1,6 +1,7 @@
 package com.qf.student_provider.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.qf.entity.Class_;
 import com.qf.entity.Student;
 import com.qf.service.IStudentService;
 import com.qf.student_provider.dao.IStudentDao;
@@ -28,5 +29,10 @@ public class StudentServiceImpl implements IStudentService {
     @Override
     public List<Student> queryAllStudent() {
         return studentDao.queryAllStudent();
+    }
+
+    @Override
+    public List<Class_> queryAllClass() {
+        return null;
     }
 }
