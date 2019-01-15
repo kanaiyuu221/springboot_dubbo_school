@@ -11,5 +11,7 @@
     <!--<insert id="insert">-->
         <!--insert into student value(null, #{name}, #{age})-->
     <!--</insert>-->
-
+    <insert id="addStu" parameterType="com.qf.entity.Student">
+        insert into d_student value(null, #{name}, #{age},#{classId})
+    </insert>
 </mapper>

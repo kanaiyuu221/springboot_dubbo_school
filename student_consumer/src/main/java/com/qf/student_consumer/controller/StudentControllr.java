@@ -43,4 +43,15 @@ public class StudentControllr {
         model.addAttribute("clist",list);
         return "addstuPage";
     }
+
+    @RequestMapping("/addStu")
+    public String addStu(Student student){
+        int result=studentService.addStu(student);
+        if (result>0){
+            return "succ";
+        }else {
+            return "faild";
+        }
+
+    }
 }

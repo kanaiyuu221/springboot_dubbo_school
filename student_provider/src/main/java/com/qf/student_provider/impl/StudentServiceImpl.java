@@ -22,7 +22,7 @@ public class StudentServiceImpl implements IStudentService {
         student.setId(id);
         student.setName("hdigsdg");
         student.setAge(245);
-        student.setClass_id(456);
+        student.setClassId(234);
         return student;
     }
 
@@ -34,5 +34,11 @@ public class StudentServiceImpl implements IStudentService {
     @Override
     public List<Class_> queryAllClass() {
         return null;
+    }
+
+    @Override
+    public int addStu(Student student) {
+        studentDao.addStu(student);
+        return 1;
     }
 }

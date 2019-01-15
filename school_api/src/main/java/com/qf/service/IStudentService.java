@@ -9,4 +9,5 @@ public interface IStudentService {
     Student getStudentById(int id);
     List<Student> queryAllStudent();
     List<Class_> queryAllClass();
+    int addStu(Student student);
 }
